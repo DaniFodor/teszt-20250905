@@ -1,0 +1,7 @@
+Z:\c#\20250909\20250909\bin\Debug\20250909.exe.config
+Z:\c#\20250909\20250909\bin\Debug\20250909.exe
+Z:\c#\20250909\20250909\bin\Debug\20250909.pdb
+Z:\c#\20250909\20250909\obj\Debug\20250909.csproj.AssemblyReference.cache
+Z:\c#\20250909\20250909\obj\Debug\20250909.csproj.CoreCompileInputs.cache
+Z:\c#\20250909\20250909\obj\Debug\20250909.exe
+Z:\c#\20250909\20250909\obj\Debug\20250909.pdb

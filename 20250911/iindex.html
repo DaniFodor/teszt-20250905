@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .blog-title{
+            padding: 0;
+            margin-bottom: 0;
+        }
+        .blog-date{
+            margin-top: 5px;
+            
+            color: blue;
+        }
+        .blog-post{
+            border: 1px solid;
+            text-indent: 2%;
+            margin-bottom: 50px;
+            background-color: greenyellow;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .blog-content{
+            color: gray;
+        }
+        .img{
+            width: 20%;
+            height: 30%;
+            float: right;
+            margin-top: 0px;
+            max-height: 120px;
+            max-width: 120px;
+        }
+        .divbediv{
+            padding: 20px;
+            
+        }
+
+
+        .article-tite{
+            padding: 0;
+            margin-bottom: 0;
+        }
+        .author-name{
+            color: blue;
+            text-align: justify;
+        }
+        .news-article{
+            border: 1px solid;
+            margin-bottom: 50px;
+            background-color: rgb(255, 106, 47);
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .article-summary{
+            color: rgba(0, 0, 0, 0.87);
+        }
+        .product-description{
+            border: 1px solid;
+            margin-bottom: 50px;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .product-title{
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .product-details{
+            color: rgba(0, 0, 0, 0.651);
+        }
+
+        .event-date{
+            color: rgba(128, 128, 128, 0.658);
+            margin: 0;
+            padding: 0
+        }
+        .event-invitation span{
+            color: gray;
+            font-weight: bold;
+        }
+        .event-invitation{
+            border: 1px solid;
+            margin-bottom: 50px;
+            
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .review-rating{
+            text-align: center;
+        }
+        .review{
+            border: 1px solid;
+            margin-bottom: 50px;
+            background-color: rgba(0, 255, 255, 0.212);
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .ad-sidebar{
+            border: 1px solid;
+            margin-bottom: 50px;
+            background-color: rgba(84, 85, 85, 0.384);
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        #id{
+            text-align: center;
+        }
+        button{
+            float: right;
+        }
+        .related-articles{
+            border: 1px solid;
+            margin-bottom: 50px;
+            background-color: rgba(255, 255, 255, 0.212);
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .related-title{
+            padding: 0;
+            margin-bottom: 0;
+        }
+        .articles-list{
+            list-style-type: none;
+        }
+        .articles-list li:hover{
+            font-weight: bold;
+            float: left;
+        }
+        .quote-sidebarevent-title{
+            border: 1px solid;
+            margin-bottom: 50px;
+            background-color: rgba(255, 255, 255, 0.212);
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .quote-content{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .quote-author{
+            text-align: right;
+        }
+        .review{
+            border: 1px solid;
+            margin-bottom: 50px;
+            background-color: rgba(255, 255, 255, 0.212);
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .review-title{
+            padding: 0;
+            margin-bottom: 0;
+        }
+        .review-rating{
+            text-align: center;
+        }
+        .review-text{
+            text-align: justify;
+            color: blue;
+        }
+        .recipe-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        .recipe-header {
+            margin-bottom: 20px;
+        }
+        .recipe-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .recipe-intro {
+            font-size: 18px;
+            color: #555;
+        }
+        .recipe-ingredients, .recipe-steps {
+            margin-bottom: 20px;
+        }
+        .recipe-ingredients h2, .recipe-steps h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #444;
+         }
+        .recipe-ingredients ul, .recipe-steps ol {
+            padding-left: 20px;
+        }
+        .recipe-ingredients li, .recipe-steps li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .recipe-footer {
+            border-top: 1px solid #ddd;
+            padding: 10px 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .recipe-footer p {
+            font-size: 14px;
+            color: #888;
+        }
+        .scientific-article {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f5f5f5;
+        }   
+        .article-header {
+            margin-bottom: 20px;
+        }
+        .article-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .article-intro {
+            font-size: 18px;
+            color: #555;
+        }
+        .article-content, .article-conclusion {
+            margin-bottom: 20px;
+        }
+        .article-content h2, .article-conclusion h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #444;
+        }
+        .article-content p, .article-conclusion p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .article-footer {
+            border-top: 1px solid #ddd;
+            padding: 10px 20px;
+            background-color: #e9e9e9;
+            text-align: center;
+        }
+        .article-footer p {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+    <script>
+        function myFunction() {
+          document.getElementById("ad-title").style.color = "red";
+        }
+    </script>
+</head>
+<body>
+    <div class="blog-post">
+        <img src="1000015819.jpg" class="img">
+        <article>
+            <h2 class="blog-title">Kedvenc állatom</h2>
+            <p class="blog-date">2024. szeptember 17.</p>
+            <p class="blog-content">A macska, más néven házi macska (Felis silvestris catus) kisebb termetű húsevő emlős, ami a ragadozók rendjén belül a macskafélék (Felidae) családjának Felis neméhez és vadmacska (Felis silvestris) fajához tartozik. A vadmacska alfaja. Ügyes ragadozó, több mint 1000 faj tekinthető a zsákmányának. Emellett meglehetősen intelligens, beidomítható egyszerű parancsok végrehajtására vagy szerkezetek műk<br><br>Legjobb</p>
+        </article>
+    </div>
+
+    <div class="news-article">
+        <img src="1000015939.jpg" class="img">
+        <article>
+            <h2 class="article-title">Fodor Dániel</h2>
+            <p class="author-name">Szerző: Fodor Dániel</p>
+            <p class="article-summary">Fodor Dániel a világ legjobb sportolója, egy isten! Általában sakkozik, de néha sudokuzik is. A legjobb matekos is (Buluzs szerint) <br> Érdkesség: több sakk játszam létezik, mint ahágy atom van a világegyetemben</p>
+        </article>
+    </div>
+
+    <div class="product-description">
+        <img src="03062-400x400.jpg" class="img">
+        <article>
+            <h2 class="product-title">Tescos kifli</h2>
+            <p class="product-price">Ára: Elképzelhetetlenűl drága</p>
+            <p class="product-details">A világ legkeményebb kiflie, nagyon finom. A fogakra veszélyes! Nagyon jó ital. <br> A "Tescos kifli" valójában nem egyetlen termék, hanem többféle kifli, amelyet a Tesco áruházakban lehet kapni. A kínálatban szerepelnek tejes, magvas és szendvicskiflik is, melyek ára és tápanyagtartalma változó lehet. Ha specifikus "Tescos kiflit" keres, érdemes a Tesco Szupermarket weboldalán, vagy a boltban tájékozódni a pontos termékválasztékról és az aktuális akciókról. </p>
+        </article>
+    </div>
+
+    <div class="event-invitation">
+        <article>
+            <h2 class="event-title">Szülinapi party meghívó</h2>
+            <p class="event-date">Időpont: 2025.09.11 18:61</p>
+            <p class="event-details">Gyere el és ünnepeld velünk a szülinapot!<br>Helyszín: <span>Budapest, Auswith utca 12.</span><br>Sok szeretettel várunk!</p>
+        </article>
+    </div>
+
+    <div class="review">
+        <article>
+            <h2 class="review-title">kedvenc könyvem</h2>
+            <p class="review-rating">10/10</p>
+            <p class="review-text"></p>
+        </article>
+    </div>
+
+    <div class="ad-sidebar">
+        <aside>
+            <button onclick="myFunction()">x</button>
+            <h2 class="ad-title" id="asd">Hírdetés</h2>
+            <p class="ad-content">Vásárolj most 50% kedvezménnyel!</p>
+        </aside>
+    </div>
+
+    <div class="related-articles">
+        <aside>
+            <h2 class="related-title">Kapcsolódó cikkek</h2>
+            <ul class="articles-list">
+                <li>Cikk 1</li>
+                <li>Cikk 2</li>
+                <li>Cikk 3</li>
+            </ul>
+        </aside>
+    </div>
+    <div class="quote-sidebarevent-title">
+        <aside>
+            <p class="quote-content">"Alma"</p>
+            <p class="quote-author">- Dani</p>
+        </aside>
+    </div>
+
+    <div class="review">
+        <aside>
+            <h2 class="review-title">Feliratkozás</h2>
+            <p class="review-rating">10/10</p>
+            <p class="review-text">Iratkozzon fel a chess.com prémiumra!</p>
+        </aside>
+    </div>
+<script>
+function myFunction() {
+  document.getElementById("asd").style.color = "red";
+}
+</script>
+
+<main class="recipe-card">
+    <header class="recipe-header">
+    <h1 class="recipe-title">Csokis Süti</h1>
+    <p class="recipe-intro">Ez a csokis süti recept gyors és egyszerű, 
+   tökéletes desszert minden alkalomra.</p>
+    </header>
+    <section class="recipe-ingredients">
+    <h2>Hozzávalók:</h2>
+    <ul>
+    <li>200 g étcsokoládé</li>
+    <li>150 g vaj</li>
+    <li>200 g cukor</li>
+    <li>3 tojás</li>
+    <li>100 g liszt</li>
+    </ul>
+    </section>
+    <section class="recipe-steps">
+    <h2>Elkészítés:</h2>
+    <ol>
+    <li>Melegítsd elő a sütőt 180°C-ra.</li>
+    <li>Olvaszd meg a csokoládét és a vajat.</li>
+    <li>Keverd hozzá a cukrot, majd egyesével a tojásokat.</li>
+    <li>Szitáld bele a lisztet és keverd össze.</li>
+    <li>Öntsd a masszát egy kivajazott sütőformába és süsd 20-25 
+   percig.</li>
+    </ol>
+    </section>
+   </main>
+   <footer class="recipe-footer">
+    <p>Szerző: János | Forrás: Kedvenc Receptjeim</p>
+   </footer>
+
+
+   <main class="scientific-article">
+    <header class="article-header">
+    <h1 class="article-title">Az AI Hatása a Jövő Munkaerőpiacára</h1>
+    <p class="article-intro">Ebben a cikkben megvizsgáljuk az AI 
+   technológia jövőbeli hatásait a munkaerőpiacra.</p>
+    </header>
+    <section class="article-content">
+    <h2>Bevezetés</h2>
+    <p>Az AI technológia rohamos fejlődése számos területen gyakorol 
+   jelentős hatást...</p>
+    <!-- További tartalom -->
+    </section>
+    <section class="article-conclusion">
+    <h2>Következtetés</h2>
+    <p>Összességében az AI technológia várhatóan jelentős változásokat 
+   hoz a munkaerőpiacon...</p>
+    </section>
+   </main>
+   <footer class="article-footer">
+    <p>Szerző: Dr. Katalin | Forrás: Tudományos Közlemények</p>
+   </footer>
+   
+</body>
+</html>
